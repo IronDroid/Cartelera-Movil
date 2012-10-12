@@ -1,54 +1,50 @@
 package xibercom.jug.multicine;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-public class EficienteAdapter extends BaseAdapter {
+import android.widget.TextView;
+import java.util.LinkedList;
 
-	private LayoutInflater mInflater;
-	private Drawable[] ICONOS;
-	
-	public int getCount() {
-		
-		return ICONOS.length;
-	}
-	public EficienteAdapter(Context contexto,Drawable[] ICONOS) {
-		mInflater = LayoutInflater.from(contexto);
-		
-		this.ICONOS = ICONOS;
-	}
-	public Object getItem(int posicion) {
-		return posicion;
-	}
+public class EficienteAdapter extends ArrayAdapter<PeliculaItem> {
 
-	public long getItemId(int posicion) {
-		return posicion;
-	}
+    private LayoutInflater mInflater;
+    private LinkedList<PeliculaItem> listP;
 
-	public View getView(int posicion, View convertView, ViewGroup parent) {
-		ViewHolder holder;
-		if (convertView == null) {
-			convertView = mInflater.inflate(R.layout.peliculas, null);
-			holder = new ViewHolder();
-			
-			holder.imagen = (ImageView) convertView.findViewById(R.id.imageView1);
-			convertView.setTag(holder);
-		} else {
-			holder = (ViewHolder) convertView.getTag();
-		}
-		holder.imagen.setImageDrawable(ICONOS[posicion]);
-		return convertView;
-	}
+    public EficienteAdapter(Context context, int textViewResourceId, LinkedList<PeliculaItem> objects) {
+        super(context, textViewResourceId, objects);
+        mInflater = LayoutInflater.from(context);
+        listP = objects;
+    }
 
-	static class ViewHolder {
-		
-		ImageView imagen;
-	}
+    @Override
+    public View getView(int posicion, View convertView, ViewGroup parent) {
+        ViewHolder holder;
+        if (convertView == null) {
+            convertView = mInflater.inflate(R.layout.peliculas, null);
+            holder = new ViewHolder();
 
-	
+            holder.image = (ImageView) convertView.findViewById(R.id.image);
+            holder.titulo = (TextView) convertView.findViewById(R.id.titulo);
+            holder.horarioFuncion = (TextView) convertView.findViewById(R.id.horarios);
+            convertView.setTag(holder);
+        } else {
+            holder = (ViewHolder) convertView.getTag();
+        }
+        holder.image.setImageResource(listP.get(posicion).getImage());
+        holder.titulo.setText(listP.get(posicion).getTitulo());
+        holder.horarioFuncion.setText(listP.get(posicion).getHorarioFuncion());
+        return convertView;
+    }
 
+    static class ViewHolder {
+
+        ImageView image;
+        TextView titulo;
+        TextView horarioFuncion;
+        boolean estreno;
+    }
 }
