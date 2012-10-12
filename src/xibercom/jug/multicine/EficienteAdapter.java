@@ -27,9 +27,9 @@ public class EficienteAdapter extends ArrayAdapter<PeliculaItem> {
             convertView = mInflater.inflate(R.layout.peliculas, null);
             holder = new ViewHolder();
 
-            holder.image = (ImageView) convertView.findViewById(R.id.image);
-            holder.titulo = (TextView) convertView.findViewById(R.id.titulo);
-            holder.horarioFuncion = (TextView) convertView.findViewById(R.id.horarios);
+            holder.image = (ImageView) convertView.findViewById(R.id.image_item);
+            holder.titulo = (TextView) convertView.findViewById(R.id.titulo_item);
+            holder.horarioFuncion = (TextView) convertView.findViewById(R.id.horarios_item);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();

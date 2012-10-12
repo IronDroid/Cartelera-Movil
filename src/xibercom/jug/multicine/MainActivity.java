@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 		cartelera.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
-				Intent enlace = new Intent(MainActivity.this, PeliculasActivity.class);
+				Intent enlace = new Intent(MainActivity.this, PeliculasListActivity.class);
 				startActivity(enlace);
 				
 				

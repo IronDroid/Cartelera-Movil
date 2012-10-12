@@ -26,6 +26,7 @@ C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\drawable-xhdpi
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\drawable-xhdpi\ic_launcher.png \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\listapeliculas.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\main.xml \
+C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\pelicula.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\peliculas.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\menu\main.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\values\strings.xml \

@@ -6,7 +6,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/image_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dip"
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
-            android:id="@+id/titulo"
+            android:id="@+id/titulo_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -26,7 +26,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             tools:ignore="HardcodedText"/>
         <TextView
-            android:id="@+id/horarios"
+            android:id="@+id/horarios_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"

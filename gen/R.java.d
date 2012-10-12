@@ -26,16 +26,9 @@ C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\drawable-xhdpi
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\drawable-xhdpi\ic_launcher.png \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\listapeliculas.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\main.xml \
+C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\pelicula.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\peliculas.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\menu\main.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\values\strings.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\values\styles.xml \
-C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\res\drawable-hdpi\ic_action_search.png \
-C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\res\drawable-hdpi\ic_launcher.png \
-C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\res\drawable-hdpi\logo.png \
-C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\res\drawable-ldpi\ic_launcher.png \
-C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\res\drawable-mdpi\ic_action_search.png \
-C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\res\drawable-mdpi\ic_launcher.png \
-C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\res\drawable-xhdpi\ic_action_search.png \
-C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\res\drawable-xhdpi\ic_launcher.png \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\AndroidManifest.xml \

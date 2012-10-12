@@ -4,8 +4,9 @@ C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xiberc
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\EficienteAdapter.class \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\MainActivity$1.class \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\MainActivity.class \
+C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\PeliculaActivity.class \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\PeliculaItem.class \
-C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\PeliculasActivity.class \
+C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\PeliculasListActivity.class \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\R$attr.class \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\R$drawable.class \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\classes\xibercom\jug\multicine\R$id.class \
