@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">multicine</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Multicine</string>
+    <string name="cartelera">Cartelera</string>
+
+</resources>
