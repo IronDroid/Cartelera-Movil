@@ -1,6 +1,7 @@
 package xibercom.jug.multicine;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,11 @@ public class EficienteAdapter extends ArrayAdapter<PeliculaItem> {
         holder.image.setImageResource(listP.get(posicion).getImage());
         holder.titulo.setText(listP.get(posicion).getTitulo());
         holder.horarioFuncion.setText(listP.get(posicion).getHorarioFuncion());
+        if(posicion %2 ==0){
+            convertView.setBackgroundColor(Color.parseColor("#0099CC"));
+        } else{
+            convertView.setBackgroundColor(Color.parseColor("#33B5E5"));
+        }
         return convertView;
     }
 
