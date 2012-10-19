@@ -7,13 +7,11 @@ import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import com.viewpagerindicator.UnderlinePageIndicator;
+import xibercom.jug.multicine.servicios.ServiciosActitity;
 
 public class MainActivity extends Activity {
 
@@ -30,21 +28,14 @@ public class MainActivity extends Activity {
         indicator.setViewPager(pager);
         indicator.setFades(false);
         indicator.setCurrentItem(1);
-
-        Button cartelera = (Button) findViewById(R.id.cartelera);
-        cartelera.setOnClickListener(new OnClickListener() {
-
-            public void onClick(View v) {
-                Intent enlace = new Intent(MainActivity.this, PeliculasListActivity.class);
-                startActivity(enlace);
-            }
-        });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+    public void onClickCartelera(View button) {
+        startActivity(new Intent(MainActivity.this, PeliculasListActivity.class));
+    }
+
+    public void onClickServicios(View button) {
+        startActivity(new Intent(MainActivity.this, ServiciosActitity.class));
     }
 
     private class MyPagerAdapter extends PagerAdapter {
@@ -66,7 +57,7 @@ public class MainActivity extends Activity {
                     res = R.drawable.p_406;
                     break;
                 case 1:
-                    res = R.drawable.logo;
+                    res = R.drawable.logo_pager;
                     break;
                 case 2:
                     res = R.drawable.p_411;

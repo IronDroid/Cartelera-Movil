@@ -4,7 +4,23 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="#33B5E5">
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#33B5E5">
+        <ImageView
+            android:src="@drawable/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Multicine"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -23,27 +39,50 @@
             android:background="@android:color/white"/>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout1"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
+        android:layout_margin="10dip"
         android:orientation="vertical">
         <Button
             android:id="@+id/cartelera"
-            android:layout_width="wrap_content"
+            android:background="@drawable/button_selecctor_one"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cartelera"/>
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="@string/cartelera"
+            android:onClick="onClickCartelera"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal">            
+            <Button
+                android:id="@+id/button2"
+                android:background="@drawable/button_selecctor_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="Proximamente"
+                android:onClick="onClickProixmamente"/>
+            <Button
+                android:id="@+id/button3"
+                android:background="@drawable/button_selecctor_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="Servicios"
+                android:onClick="onClickServicios"/>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -14,9 +14,9 @@ public class PeliculasListActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listapeliculas);
+        setContentView(R.layout.list_peliculas);
         pelis();
-        setListAdapter(new EficienteAdapter(this, R.layout.listapeliculas, listP));
+        setListAdapter(new EficienteAdapter(this, R.layout.list_peliculas, listP));
     }
 
     @Override
