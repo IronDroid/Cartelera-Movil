@@ -31,10 +31,6 @@ public class ServiciosActitity extends ListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-        if (position == 0) {
-            Intent enlace = new Intent(ServiciosActitity.this, MainActivity.class);
-            startActivity(enlace);
-        }
         if (position == 1) {
             Intent enlace = new Intent(ServiciosActitity.this, ParqueoActivity.class);
             startActivity(enlace);
