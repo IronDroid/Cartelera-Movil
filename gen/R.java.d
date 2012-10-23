@@ -114,6 +114,7 @@ C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\pelicul
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\peliculas.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\restaurantes.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout\tienda.xml \
+C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\layout-land\main.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\menu\main.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\res\values\strings.xml \
 C:\Users\Jhon_Li\Desktop\Documents\NetBeansProjects\multicine\bin\res\drawable-hdpi\button_default_disabled2.9.png \

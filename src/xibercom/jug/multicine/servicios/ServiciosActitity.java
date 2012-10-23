@@ -10,7 +10,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
-import xibercom.jug.multicine.MainActivity;
 import xibercom.jug.multicine.R;
 
 public class ServiciosActitity extends ListActivity {
@@ -20,12 +19,12 @@ public class ServiciosActitity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_servicios);
 
-            Drawable[] ICONOS = {getResources().getDrawable(R.drawable.call),
-                getResources().getDrawable(R.drawable.parqueo),
-                getResources().getDrawable(R.drawable.candybar),
-                getResources().getDrawable(R.drawable.tiendas),
-                getResources().getDrawable(R.drawable.restaurantes)};
-            setListAdapter(new AdapterServicios(this, ICONOS));
+        Drawable[] ICONOS = {getResources().getDrawable(R.drawable.call),
+            getResources().getDrawable(R.drawable.parqueo),
+            getResources().getDrawable(R.drawable.candybar),
+            getResources().getDrawable(R.drawable.tiendas),
+            getResources().getDrawable(R.drawable.restaurantes)};
+        setListAdapter(new AdapterServicios(this, ICONOS));
     }
 
     @Override

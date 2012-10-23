@@ -39,9 +39,9 @@ public class EficienteAdapter extends ArrayAdapter<PeliculaItem> {
         holder.titulo.setText(listP.get(posicion).getTitulo());
         holder.horarioFuncion.setText(listP.get(posicion).getHorarioFuncion());
         if(posicion %2 ==0){
-            convertView.setBackgroundColor(Color.parseColor("#0099CC"));
+            convertView.setBackgroundColor(Color.WHITE);
         } else{
-            convertView.setBackgroundColor(Color.parseColor("#33B5E5"));
+            convertView.setBackgroundColor(Color.parseColor("#33B5D5"));
         }
         return convertView;
     }

@@ -24,62 +24,58 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <android.support.v4.view.ViewPager
-            android:id="@+id/my_pager"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="0.01"/>
-        <com.viewpagerindicator.UnderlinePageIndicator
-            android:id="@+id/my_indicator"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:layout_weight="0.99"
-            android:background="@android:color/white"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="10dip"
-        android:orientation="vertical">
-        <Button
-            android:id="@+id/cartelera"
-            android:background="@drawable/button_selecctor_one"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="20dip"
-            android:paddingRight="20dip"
-            android:text="@string/cartelera"
-            android:onClick="onClickCartelera"/>
+        android:layout_height="fill_parent">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:layout_marginTop="10dip"
-            android:orientation="horizontal">            
+            android:orientation="vertical">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/my_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.01"/>
+            <com.viewpagerindicator.UnderlinePageIndicator
+                android:id="@+id/my_indicator"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.99"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/cartelera"
+                android:background="@drawable/button_selecctor_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="@string/cartelera"
+                android:onClick="onClickCartelera"/>
             <Button
                 android:id="@+id/button2"
                 android:background="@drawable/button_selecctor_one"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginRight="5dip"
+                android:layout_marginTop="10dip"
                 android:paddingLeft="20dip"
                 android:paddingRight="20dip"
                 android:text="Proximamente"
-                android:onClick="onClickProximamente"/>
+                android:onClick="onClickProixmamente"/>
             <Button
                 android:id="@+id/button3"
                 android:background="@drawable/button_selecctor_one"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
                 android:paddingLeft="20dip"
                 android:paddingRight="20dip"
                 android:text="Servicios"

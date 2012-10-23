@@ -1,8 +1,11 @@
 package xibercom.jug.multicine;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -10,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 import com.viewpagerindicator.UnderlinePageIndicator;
 import xibercom.jug.multicine.servicios.ServiciosActitity;
 
@@ -28,6 +32,31 @@ public class MainActivity extends Activity {
         indicator.setViewPager(pager);
         indicator.setFades(false);
         indicator.setCurrentItem(1);
+        ImageView iv = (ImageView) findViewById(R.id.call);
+        iv.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View arg0) {
+                startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:65671476")));
+            }
+        });
+    }
+
+    private AlertDialog messageBoxfinishCancel(Context context, String title, String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+
+            public void onClick(DialogInterface dialog, int id) {
+            }
+        });
+        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        return builder.create();
     }
 
     public void onClickCartelera(View button) {
@@ -36,6 +65,9 @@ public class MainActivity extends Activity {
 
     public void onClickServicios(View button) {
         startActivity(new Intent(MainActivity.this, ServiciosActitity.class));
+    }
+
+    public void onClickProximamente(View bottun) {
     }
 
     private class MyPagerAdapter extends PagerAdapter {
